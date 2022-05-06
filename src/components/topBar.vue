@@ -12,7 +12,7 @@
             <div class="router-btn" @click="toCode">Code Share</div>
             <div class="router-btn" @click="toMessage">Message board</div>
             <div class="router-btn" @click="toDiary">My Diary</div>
-            <div class="sign-up">About Me</div>
+            <div class="sign-up" @click="toMe">About Me</div>
         </div>
     </div>
 </template>
@@ -47,6 +47,10 @@ export default {
 
         toMessage() {
             this.$router.push('/message')
+        },
+        
+        toMe() {
+            this.$router.push('/me')
         }
     }
 }

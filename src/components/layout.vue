@@ -52,7 +52,8 @@ export default {
 @import "../style/transform.scss";
 .layout-box {
   color: white;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: fixed;
   width: calc( 100vw - 80px);
   height: calc( 100vh - 80px);
